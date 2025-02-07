@@ -12,3 +12,17 @@ stages:
     - src/data_preparation.py
     outs:
     - data/processed
+  model_building:
+    cmd: python src/model_building.py
+    deps:
+    - data/processed
+    - src/model_building.py
+    outs:
+    - model.pkl
+  model_evaluation:
+    cmd: python src/model_evaluation.py
+    deps:
+    - model.pkl
+    - src/model_evaluation.py
+    metrics:
+    - metrics.json
