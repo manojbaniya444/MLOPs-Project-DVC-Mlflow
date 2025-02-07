@@ -5,3 +5,10 @@ stages:
     - src/data_collection.py
     outs:
     - data/raw
+  pre_processing:
+    cmd: python src/data_preparation.py
+    deps:
+    - data/raw
+    - src/data_preparation.py
+    outs:
+    - data/processed
