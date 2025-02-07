@@ -9,3 +9,7 @@ python -m dvc dag
 
 python -m dvc metrics show
 ```
+
+```bash
+uvicorn main:app --reload --port 8080
+```

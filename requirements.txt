@@ -1,0 +1,5 @@
+dvc
+pandas
+numpy
+fastapi[standard]
+scikit-learn
