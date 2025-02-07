@@ -1,0 +1,15 @@
+schema: '2.0'
+stages:
+  data_collection:
+    cmd: python src/data_collection.py
+    deps:
+    - path: src/data_collection.py
+      hash: md5
+      md5: 5940df5a0f286d064849082271a83acb
+      size: 487
+    outs:
+    - path: data/raw
+      hash: md5
+      md5: 3179483528725f20d5fe2a42cb7aa1b7.dir
+      size: 522262
+      nfiles: 2
