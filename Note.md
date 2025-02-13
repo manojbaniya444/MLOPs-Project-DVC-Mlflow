@@ -38,4 +38,6 @@ git tag -a v1.0 -m "Release V1"
 dvc remote add -d myremote TEMP_PATH_FOLDER
 
 dvc status # to check the status of data and pipeline
+
+dvc checkout
 ```
