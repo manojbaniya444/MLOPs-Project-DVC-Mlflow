@@ -52,8 +52,8 @@ def main():
         if not os.path.exists(processed_data_file):
             os.makedirs(processed_data_file)
         
-        save_csv_file(train_processed_data, os.path.join(processed_data_file, "train_processed.csv"))
-        save_csv_file(test_processed_data, os.path.join(processed_data_file, "test_processed.csv"))
+        save_csv_file(train_processed_data, os.path.join(processed_data_file, "train_processed_median.csv"))
+        save_csv_file(test_processed_data, os.path.join(processed_data_file, "test_processed_median.csv"))
         
     except Exception as e:
         raise Exception(f"Error on data preparation {e}")

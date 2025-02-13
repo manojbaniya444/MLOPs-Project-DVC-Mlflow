@@ -11,8 +11,6 @@ def load_data(filepath: str) -> pd.DataFrame:
     except Exception as e:
         raise Exception(f"Error loading file {filepath}:{e}")
     
-test_data = pd.read_csv("./data/processed/test_processed.csv")
-
 # prepare data
 def prepare_data(data: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series]:
     try:
@@ -58,7 +56,7 @@ def save_metrics(metrics_dict: dict, filepath: str):
         raise Exception(f"Error saving model result {filepath}:{e}")
 
 def main():
-    test_data_path = "./data/processed/test_processed.csv"
+    test_data_path = "./data/processed/test_processed_median.csv"
     model_path = "models/model.pkl"
     metrics_path = "reports/metrics.json"
     
