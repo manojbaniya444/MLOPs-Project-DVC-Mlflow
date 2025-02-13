@@ -27,6 +27,15 @@ uvicorn main:app --reload --port 8080
 Tuning parameter at one file i.e `params.yaml` at [Parameter Tuning](./params.yaml)
 
 ## Git Tag
+
 ```shell
 git tag -a v1.0 -m "Release V1"
+```
+
+## Adding the temp path for data versoning folder
+
+```bash
+dvc remote add -d myremote TEMP_PATH_FOLDER
+
+dvc status # to check the status of data and pipeline
 ```
