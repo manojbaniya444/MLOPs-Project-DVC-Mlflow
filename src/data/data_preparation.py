@@ -46,8 +46,8 @@ def main():
         train_data = load_data(os.path.join(raw_data_file, "train.csv"))
         test_data = load_data(os.path.join(raw_data_file, "test.csv"))
 
-        train_processed_data = fill_missing_with_median(train_data)
-        test_processed_data = fill_missing_with_median(test_data)
+        train_processed_data = fill_missing_with_mean(train_data)
+        test_processed_data = fill_missing_with_mean(test_data)
         
         if not os.path.exists(processed_data_file):
             os.makedirs(processed_data_file)
