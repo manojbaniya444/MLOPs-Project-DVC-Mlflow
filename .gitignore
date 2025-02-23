@@ -90,3 +90,7 @@ target/
 
 # virtual env
 .myvenv
+
+*.pkl
+
+*.png
