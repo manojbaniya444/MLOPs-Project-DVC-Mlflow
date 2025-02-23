@@ -28,8 +28,15 @@ stages:
     deps:
     - models/model.pkl
     - src/model/model_evaluation.py
+    outs:
+    - reports/run_info.json
     metrics:
     - reports/metrics.json
+  model_registration:
+    cmd: python src/model/model_registration.py
+    deps:
+    - reports/run_info.json
+    - src/model/model_registration.py
 params:
 - dvclive/params.yaml
 metrics:

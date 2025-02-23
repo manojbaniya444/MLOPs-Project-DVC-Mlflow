@@ -42,5 +42,5 @@ client.transition_model_version_stage(
     stage=new_stage,
     archive_existing_versions=True
 )
-
+ 
 print(f"Model {model_name} version {model_version} transitioned to {new_stage} stage.")
